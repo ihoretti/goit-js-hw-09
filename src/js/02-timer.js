@@ -106,3 +106,7 @@ function timeClear() {
   refs.getMinutes.textContent = '00';
   refs.getSeconds.textContent = '00';
 }
+timer.style.display = 'flex';
+timer.style.justifyContent = 'space-evenly';
+timer.style.marginTop = '40px';
+timer.style.fontSize = '30px';

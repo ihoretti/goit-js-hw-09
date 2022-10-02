@@ -22,9 +22,8 @@ Notify.init({
 
   cssAnimationStyle: 'zoom',
 });
-
+const timer = document.querySelector('.timer');
 const refs = {
-  getTimer: document.querySelector('.timer'),
   getInput: document.querySelector('#datetime-picker'),
   getStartBtn: document.querySelector('[data-start]'),
   getDays: document.querySelector('[data-days]'),
@@ -106,8 +105,7 @@ function timeClear() {
   refs.getMinutes.textContent = '00';
   refs.getSeconds.textContent = '00';
 }
-
-getTimer.style.display = 'flex';
-getTimer.style.justifyContent = 'space-evenly';
-getTimer.style.marginTop = '40px';
-getTimer.style.fontSize = '30px';
+timer.style.display = 'flex';
+timer.style.justifyContent = 'space-evenly';
+timer.style.marginTop = '40px';
+timer.style.fontSize = '30px';
